@@ -1,0 +1,16 @@
+.section {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &:last-child {
+    background-color: #f5f4fa;
+  }
+}
+
+.section-grey {
+  background-color: #f5f4fa;
+}

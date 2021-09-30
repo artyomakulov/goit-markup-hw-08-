@@ -1,0 +1,38 @@
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-icon-logo {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 3%;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-icon-link {
+  display: flex;
+  padding: 16px 32px;
+  &:hover .clients-icon-logo,
+  &:focus .clients-icon-logo {
+    fill: var(--accent-color);
+  }
+}

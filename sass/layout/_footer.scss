@@ -1,0 +1,137 @@
+.footer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.91;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  display: flex;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  & .container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.contacts-list .item:not(:last-child) {
+  margin-bottom: 9px;
+  padding: 0px;
+}
+
+.container .contacts-list {
+  margin-top: 9px;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.contacts-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.contacts-mail,
+.contacts-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+.footer-social {
+  margin-top: 12px;
+}
+
+.footer-social-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-logo {
+  fill: #ffffff;
+}
+
+.socials-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  flex-grow: 1;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  height: 50px;
+  background-color: var(--background-grey);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.btn-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+}
+
+.mailing-icon-svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.mailing {
+  margin-top: 12px;
+  margin-left: auto;
+  width: 570px;
+}
