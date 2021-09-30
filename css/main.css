@@ -100,6 +100,13 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section:last-child {
   background-color: #f5f4fa;
 }
@@ -365,7 +372,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .feature__logo {
-    margin: 15px;
+    width: 270px;
+    flex-basis: auto;
   }
 }
 
@@ -373,6 +381,19 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: flex;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .feature__list {
+    flex-wrap: wrap;
+  }
 }
 
 .feature__list .feature__logo::before {
