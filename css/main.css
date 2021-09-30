@@ -108,8 +108,8 @@ button {
 }
 
 .header-list {
-  display: flex;
   margin-left: 93px;
+  display: none;
 }
 
 .header-list .header-list__item {
@@ -193,7 +193,7 @@ button {
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -254,6 +254,12 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__button {
@@ -482,6 +488,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
 }
 
 .clients-list-item {
@@ -512,10 +519,6 @@ button {
   fill: var(--accent-color);
 }
 
-.clients-icon-logo {
-  fill: #afb1b8;
-}
-
 .footer-title {
   font-style: normal;
   font-weight: bold;
@@ -525,12 +528,6 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.contacts .container {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
 }
 
 .footer-logo {
@@ -551,6 +548,12 @@ button {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.contacts .container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .contacts-list .item:not(:last-child) {
@@ -738,11 +741,6 @@ button {
   transition: transform 250ms ease;
 }
 
-.example-item:hover .example-text,
-.example-item:focus .example-text {
-  transform: translateY(0%);
-}
-
 .example-container {
   display: flex;
   flex-wrap: wrap;
@@ -755,6 +753,10 @@ button {
   border: 1px solid #eeeeee;
 }
 
+.example-item:hover, .example-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .example-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -763,9 +765,9 @@ button {
   margin-bottom: 0;
 }
 
-.example-item:hover,
-.example-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.example-item:hover .example-text,
+.example-item:focus .example-text {
+  transform: translateY(0%);
 }
 
 .backdrop {

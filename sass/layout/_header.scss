@@ -16,8 +16,8 @@
 }
 
 .header-list {
-  display: flex;
   margin-left: 93px;
+  display: none;
   & .header-list__item {
     margin-right: 40px;
   }
@@ -96,7 +96,7 @@
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
   & .header-list__item:last-child {
     margin-left: 50px;
