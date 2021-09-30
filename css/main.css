@@ -424,6 +424,12 @@ button {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .duty {
+    display: none;
+  }
+}
+
 .duty__list {
   display: flex;
   flex-wrap: wrap;
