@@ -52,6 +52,10 @@
 
 .footer-contacts {
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
 }
 
 .contacts-adress {
@@ -71,7 +75,9 @@
   font-style: normal;
 }
 .footer-social {
-  // margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer-social-title {
@@ -105,6 +111,9 @@
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
   }
 }
 
@@ -157,7 +166,6 @@
 
 .mailing {
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
     width: 570px;
   }
 }

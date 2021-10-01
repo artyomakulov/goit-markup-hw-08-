@@ -696,6 +696,13 @@ button {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
+}
+
 .contacts-adress {
   font-size: 14px;
   line-height: 1.71;
@@ -711,6 +718,12 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
+  }
 }
 
 .footer-social-title {
@@ -747,6 +760,12 @@ button {
 @media screen and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    align-items: flex-start;
   }
 }
 
@@ -807,7 +826,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .mailing {
-    margin-left: auto;
     width: 570px;
   }
 }
