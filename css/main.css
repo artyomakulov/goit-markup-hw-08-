@@ -555,6 +555,7 @@ button {
 .socials-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .socials-items:not(:last-child) {
@@ -662,16 +663,24 @@ button {
 }
 
 .contacts {
-  display: flex;
-  background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
-.contacts .container {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .contacts {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .contacts-list .item:not(:last-child) {
@@ -684,7 +693,7 @@ button {
 }
 
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .contacts-adress {
@@ -702,10 +711,6 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-}
-
-.footer-social {
-  margin-top: 12px;
 }
 
 .footer-social-title {
@@ -734,12 +739,21 @@ button {
 }
 
 .footer-form {
+  width: 100%;
   display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    flex-direction: column;
+  }
 }
 
 .footer-form-input {
+  width: 100%;
   flex-grow: 1;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -751,6 +765,24 @@ button {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    margin-right: 12px;
+  }
 }
 
 .footer-form-input::placeholder {
@@ -773,10 +805,11 @@ button {
   fill: currentColor;
 }
 
-.mailing {
-  margin-top: 12px;
-  margin-left: auto;
-  width: 570px;
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .filtr-list {

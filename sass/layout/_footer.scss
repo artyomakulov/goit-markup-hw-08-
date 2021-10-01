@@ -7,6 +7,7 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  // margin-top: 60px;
 }
 
 .footer-logo {
@@ -23,17 +24,23 @@
 }
 
 .contacts {
-  display: flex;
-  background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  & .container {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  background-color: #2f303a;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  .container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
   }
 }
-
 .contacts-list .item:not(:last-child) {
   margin-bottom: 9px;
   padding: 0px;
@@ -44,7 +51,7 @@
 }
 
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .contacts-adress {
@@ -64,7 +71,7 @@
   font-style: normal;
 }
 .footer-social {
-  margin-top: 12px;
+  // margin-top: 60px;
 }
 
 .footer-social-title {
@@ -92,12 +99,19 @@
   margin-top: 10px;
 }
 .footer-form {
+  width: 100%;
   display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .footer-form-input {
+  width: 100%;
   flex-grow: 1;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -109,6 +123,17 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -131,7 +156,8 @@
 }
 
 .mailing {
-  margin-top: 12px;
-  margin-left: auto;
-  width: 570px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 570px;
+  }
 }
