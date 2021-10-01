@@ -586,6 +586,13 @@ button {
 .clients-list {
   display: flex;
   justify-content: center;
+  margin: -15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    flex-wrap: wrap;
+  }
 }
 
 .clients-icon-logo {
@@ -597,32 +604,37 @@ button {
   fill: #afb1b8;
 }
 
-.clients-list-item {
-  width: 170px;
-  height: 92px;
+.clients-icons-link {
+  height: 90px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
-  border-radius: 3%;
+  border-radius: 4px;
+  color: #afb1b8;
 }
 
-.clients-list-item:hover, .clients-list-item:focus {
+.clients-icons-link:hover, .clients-icons-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-icon-link {
-  display: flex;
-  padding: 16px 32px;
-}
-
-.clients-icon-link:hover .clients-icon-logo,
-.clients-icon-link:focus .clients-icon-logo {
+.clients-icons-link:hover:hover .clients-icon-logo,
+.clients-icons-link:hover:focus .clients-icon-logo, .clients-icons-link:focus:hover .clients-icon-logo,
+.clients-icons-link:focus:focus .clients-icon-logo {
   fill: var(--accent-color);
+}
+
+.clients-list-item {
+  width: 100%;
+  margin: 15px;
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .footer-title {
