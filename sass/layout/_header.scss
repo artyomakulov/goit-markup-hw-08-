@@ -3,6 +3,10 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header-list .link {
+  padding-bottom: 32px;
+}
+
 .header__logo {
   font-family: Raleway;
   font-style: normal;
@@ -26,7 +30,7 @@
     display: flex;
     margin-left: 93px;
     flex-direction: row;
-    margin: 32px 50px;
+    margin: 32px 0px 32px 50px;
   }
   & .header-list__item {
     margin-bottom: 32px;
@@ -99,16 +103,18 @@
   &:focus {
     color: var(--accent-color);
   }
-  &::after {
-    content: "";
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-  }
+  // &::after {
+  //   @media screen and (min-width: 768px) {
+  //     content: "";
+  //     position: relative;
+  //     left: 0;
+  //     bottom: 0;
+  //     width: 100%;
+  //     height: 4px;
+  //     background: var(--accent-color);
+  //     border-radius: 2px;
+  //   }
+  // }
 }
 
 .header-navigation .link.current {
@@ -116,18 +122,18 @@
   color: var(--accent-color);
 }
 
-// .current::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 2px;
-//   @media screen and (min-width: 768px) {
-//     background: var(--accent-color);
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .header-list__link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
 
 .header-contacts {
   display: flex;
