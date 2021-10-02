@@ -148,6 +148,11 @@
     flex-direction: column-reverse;
     margin-left: auto;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .menu-button {
