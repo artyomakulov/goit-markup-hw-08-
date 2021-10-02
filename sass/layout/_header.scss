@@ -66,10 +66,16 @@
     @media screen and (min-width: 768px) {
       margin: 5px 0;
     }
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
   }
   @media screen and (min-width: 768px) {
     // margin-top: auto;
   }
+}
+.header-contacts .header-list__item:last-child {
+  margin-right: 0px;
 }
 
 .header-navigation {

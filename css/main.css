@@ -193,6 +193,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contacts .header-list__item {
+    margin-right: 40px;
+  }
+}
+
+.header-contacts .header-list__item:last-child {
+  margin-right: 0px;
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
