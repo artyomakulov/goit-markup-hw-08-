@@ -34,6 +34,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms ease;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .modal-close-btn {
@@ -144,24 +147,33 @@
 .modal-accept {
   position: relative;
   margin-bottom: 30px;
-  padding-left: 37px;
-  font-size: 14px;
-  line-height: 1.71;
+  padding-left: 23px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    padding-left: 37px;
+  }
 }
 
 .checkbox-icon {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 12px;
-  top: 50%;
+  left: 0px;
+  top: 35%;
   transform: translateY(-50%);
   border: 2px solid #212121;
   border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    left: 12px;
+    top: 50%;
+  }
 }
 
 .checkbox-input:checked + .checkbox-icon {
