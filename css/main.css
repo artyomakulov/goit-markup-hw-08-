@@ -325,7 +325,7 @@ button {
   top: 0;
   left: 0px;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   background-color: #ffffff;
 }
 
@@ -429,6 +429,13 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .telephone {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .email {
   font-weight: 500;
   font-size: 24px;
@@ -443,6 +450,13 @@ button {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -478,6 +492,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../svgimg/hero.jpg);
   }
 }
@@ -508,6 +524,14 @@ button {
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -588,7 +612,8 @@ button {
   .feature__logo {
     width: 768px;
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -609,12 +634,19 @@ button {
   .feature__list {
     display: flex;
     margin: -15px;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .feature__list {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    margin-bottom: 0px;
   }
 }
 
@@ -658,14 +690,22 @@ button {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .duty__list .item {
@@ -771,6 +811,7 @@ button {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -778,6 +819,12 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .socials-list {
+    margin-bottom: 0px;
+  }
 }
 
 .socials-items:not(:last-child) {
@@ -1067,8 +1114,26 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .filtr-list {
+    margin-bottom: 30px;
+  }
+}
+
 .filtr-item {
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtr-item {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtr-item {
+    margin-bottom: 0px;
+  }
 }
 
 .filtr-list .filtr-item:not(:last-child) {
@@ -1140,7 +1205,7 @@ button {
   line-height: 1.56;
   letter-spacing: 0.03em;
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: transform 250ms ease;
 }
 
@@ -1164,10 +1229,6 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.example-item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .example-item:hover .example-text,
 .example-item:focus .example-text {
   transform: translateY(0%);
@@ -1177,7 +1238,7 @@ button {
   .example-item {
     width: 768px;
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
   }
 }
 
@@ -1185,7 +1246,7 @@ button {
   .example-item {
     width: 1200px;
     flex-basis: calc(100% / 3 - 30px);
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
   }
 }
 

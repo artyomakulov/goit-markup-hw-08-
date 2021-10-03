@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .socials-items:not(:last-child) {
