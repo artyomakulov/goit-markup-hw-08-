@@ -284,7 +284,7 @@ button {
 }
 
 .menu-button {
-  z-index: 999;
+  z-index: 200;
   display: inline-flex;
   margin-left: auto;
   padding: 0;
@@ -296,6 +296,16 @@ button {
   .menu-button {
     display: none;
   }
+}
+
+.icon-menu-open:hover,
+.icon-menu-open:focus {
+  color: var(--accent-color);
+}
+
+.icon-menu-close:hover,
+.icon-menu-close:focus {
+  color: var(--accent-color);
 }
 
 .menu-button .icon-menu-close {
@@ -1152,6 +1162,7 @@ button {
 }
 
 .backdrop {
+  z-index: 300;
   position: fixed;
   width: 100vw;
   height: 100vh;
