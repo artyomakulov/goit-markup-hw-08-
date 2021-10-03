@@ -42,7 +42,7 @@
     margin-right: 0px;
   }
   & .header-list__link {
-    display: block;
+    // display: block;
     // padding-top: 32px;
     // padding-bottom: 32px;
     font-weight: 500;
@@ -173,8 +173,7 @@
   }
 }
 
-.icon-menu-open:hover,
-.icon-menu-open:focus {
+.icon-menu-open:hover {
   color: var(--accent-color);
 }
 
